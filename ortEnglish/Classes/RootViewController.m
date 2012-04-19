@@ -71,7 +71,11 @@
 		[[CCDirector sharedDirector] setDeviceOrientation: kCCDeviceOrientationLandscapeRight];
 	} else if( interfaceOrientation == UIInterfaceOrientationLandscapeRight) {
 		[[CCDirector sharedDirector] setDeviceOrientation: kCCDeviceOrientationLandscapeLeft];
-	}
+	} else if ( interfaceOrientation == UIInterfaceOrientationPortrait) {
+        [[CCDirector sharedDirector] setDeviceOrientation: kCCDeviceOrientationPortrait];
+    } else if ( interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+        [[CCDirector sharedDirector] setDeviceOrientation: kCCDeviceOrientationPortraitUpsideDown];
+    }
 	
 	// Since this method should return YES in at least 1 orientation, 
 	// we return YES only in the Portrait orientation
