@@ -9,6 +9,8 @@
 #import "AlphabetLayer.h"
 #import "MenuLayer.h"
 
+#define MAX_HEIGHT 420
+
 @implementation AlphabetLayer
 
 
@@ -63,7 +65,7 @@
             CCLabelTTF *label = [CCLabelTTF labelWithString:[alphabet objectForKey:[NSString stringWithFormat:@"%d", rnd[i]]]
                                                    fontName:@"Helvetica"
                                                    fontSize:30.0f];
-            label.position = ccp(arc4random() % 280 + 30, arc4random() % 440 + 30);
+            label.position = ccp(arc4random() % 280 + 30, arc4random() % MAX_HEIGHT + 30);
             [self addChild:label];
             [labels addObject:label];
         }
@@ -76,7 +78,7 @@
                     CCLabelTTF *l1 = [labels objectAtIndex:i];
                     CCLabelTTF *l2 = [labels objectAtIndex:j];
                     if (CGRectIntersectsRect(l1.boundingBox, l2.boundingBox))
-                        l1.position = ccp(arc4random() % 280 + 30, arc4random() % 440 + 30);
+                        l1.position = ccp(arc4random() % 280 + 30, arc4random() % MAX_HEIGHT + 30);
                     else a = false;
                 }
             }
@@ -104,7 +106,7 @@ int p = 0;
     [selected removeAllObjects];
     p = 0;
     for (CCLabelTTF *i in labels) {
-        CCAction *action = [CCMoveTo actionWithDuration:2.0f position:ccp(arc4random() % 280 + 30, arc4random() % 440 + 30)];
+        CCAction *action = [CCMoveTo actionWithDuration:2.0f position:ccp(arc4random() % 280 + 30, arc4random() % MAX_HEIGHT + 30)];
         [i runAction:action];
     }
 }

@@ -130,6 +130,8 @@
 		5B6D28571536216100F0B704 /* chalkboard_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B6D28561536216100F0B704 /* chalkboard_bg.png */; };
 		5B6D28591536231E00F0B704 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B6D28581536231E00F0B704 /* logo.png */; };
 		5B6D285E153624AC00F0B704 /* NumbersLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D285D153624AC00F0B704 /* NumbersLayer.m */; };
+		5B74B6611540A44000E78CC2 /* PrepositionsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B74B6601540A44000E78CC2 /* PrepositionsLayer.m */; };
+		5B74B6641540AA1200E78CC2 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B74B6631540AA1200E78CC2 /* line.png */; };
 		5BE6DB6A153FB06E00819636 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE6DB69153FB06E00819636 /* back.png */; };
 /* End PBXBuildFile section */
 
@@ -377,6 +379,9 @@
 		5B6D28581536231E00F0B704 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Images/logo.png; sourceTree = "<group>"; };
 		5B6D285C153624AC00F0B704 /* NumbersLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NumbersLayer.h; path = Classes/NumbersLayer.h; sourceTree = "<group>"; };
 		5B6D285D153624AC00F0B704 /* NumbersLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NumbersLayer.m; path = Classes/NumbersLayer.m; sourceTree = "<group>"; };
+		5B74B65F1540A44000E78CC2 /* PrepositionsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrepositionsLayer.h; path = Classes/PrepositionsLayer.h; sourceTree = "<group>"; };
+		5B74B6601540A44000E78CC2 /* PrepositionsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrepositionsLayer.m; path = Classes/PrepositionsLayer.m; sourceTree = "<group>"; };
+		5B74B6631540AA1200E78CC2 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = line.png; path = Images/line.png; sourceTree = "<group>"; };
 		5BE6DB69153FB06E00819636 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = Images/back.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -735,6 +740,7 @@
 			isa = PBXGroup;
 			children = (
 				5B52CCC315379D86004ECB0C /* hud.png */,
+				5B74B6631540AA1200E78CC2 /* line.png */,
 				5BE6DB69153FB06E00819636 /* back.png */,
 				5B6D28561536216100F0B704 /* chalkboard_bg.png */,
 				5B6D28581536231E00F0B704 /* logo.png */,
@@ -765,6 +771,8 @@
 				5B52CCC61537AC2E004ECB0C /* ColoursLayer.m */,
 				5B68268315385FAD00457B2F /* AlphabetLayer.h */,
 				5B68268415385FAD00457B2F /* AlphabetLayer.m */,
+				5B74B65F1540A44000E78CC2 /* PrepositionsLayer.h */,
+				5B74B6601540A44000E78CC2 /* PrepositionsLayer.m */,
 			);
 			name = Layers;
 			sourceTree = "<group>";
@@ -833,6 +841,7 @@
 				5B6D28591536231E00F0B704 /* logo.png in Resources */,
 				5B52CCC415379D86004ECB0C /* hud.png in Resources */,
 				5BE6DB6A153FB06E00819636 /* back.png in Resources */,
+				5B74B6641540AA1200E78CC2 /* line.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -962,6 +971,7 @@
 				5B6D285E153624AC00F0B704 /* NumbersLayer.m in Sources */,
 				5B52CCC71537AC2F004ECB0C /* ColoursLayer.m in Sources */,
 				5B68268515385FAD00457B2F /* AlphabetLayer.m in Sources */,
+				5B74B6611540A44000E78CC2 /* PrepositionsLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

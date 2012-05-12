@@ -147,7 +147,7 @@
         touched = true;
     }
     if (touched) {
-        numberLabel.position = ccp(point.x, point.y);
+        numberLabel.position = point;
 //        numberLabel.scale = point.y / 1000 + 0.6;
         for (CCLabelTTF *i in dragLabels) {
             i.scale = 1;

@@ -178,7 +178,7 @@
     CGPoint point = [[CCDirector sharedDirector] convertToGL:[touch locationInView:[touch view]]];
     for (CCLabelTTF *i in label) {
         if (CGRectContainsPoint(i.boundingBox, point)) {
-            i.position = ccp(point.x, point.y);
+            i.position = point;
         }
     }
 }

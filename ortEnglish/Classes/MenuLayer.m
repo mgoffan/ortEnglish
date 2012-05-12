@@ -12,6 +12,7 @@
 #import "NumbersLayer.h"
 #import "ColoursLayer.h"
 #import "AlphabetLayer.h"
+#import "PrepositionsLayer.h"
 
 // HelloWorldLayer implementation
 @implementation MenuLayer
@@ -43,6 +44,10 @@
     [[CCDirector sharedDirector] replaceScene:[CCTransitionFadeBL transitionWithDuration:2.0f scene:[AlphabetLayer scene]]];
 }
 
+- (void)gotoPrepositions {
+    [[CCDirector sharedDirector] replaceScene:[CCTransitionFadeBL transitionWithDuration:2.0f scene:[PrepositionsLayer scene]]];
+}
+
 // on "init" you need to initialize your instance
 -(id) init
 {
@@ -63,9 +68,10 @@
         CCMenuItem *menuItem = [CCMenuItemFont itemWithLabel:[CCLabelTTF labelWithString:@"Numbers" fontName:@"MarkerFelt-Wide" fontSize:36.0f] target:self selector:@selector(gotoNumbers)];
         CCMenuItem *menuItem2 = [CCMenuItemFont itemWithLabel:[CCLabelTTF labelWithString:@"Colours" fontName:@"MarkerFelt-Wide" fontSize:36.0f] target:self selector:@selector(gotoColours)];
         CCMenuItem *menuItem3 = [CCMenuItemFont itemWithLabel:[CCLabelTTF labelWithString:@"Alphabet" fontName:@"MarkerFelt-Wide" fontSize:36.0f] target:self selector:@selector(gotoAlphabet)];
+        CCMenuItem *menuItem4 = [CCMenuItemFont itemWithLabel:[CCLabelTTF labelWithString:@"Prepositions" fontName:@"MarkerFelt-Wide" fontSize:36.0f] target:self selector:@selector(gotoPrepositions)];
         
         
-        CCMenu *menu = [CCMenu menuWithItems:menuItem, menuItem2, menuItem3, nil];
+        CCMenu *menu = [CCMenu menuWithItems:menuItem, menuItem2, menuItem3, menuItem4, nil];
         [menu alignItemsVertically];
         
         [self addChild:menu];
